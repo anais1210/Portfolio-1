@@ -1,5 +1,6 @@
 import Image from "next/image";
 import React from "react";
+import Project1 from "./1/page";
 
 export default function Projects() {
   return (
@@ -19,10 +20,10 @@ export default function Projects() {
           Projects
         </h1>
       </div>
-      <div className="mt-8 w-full flex justify-center font-montserrat animate-fadeInUp">
+      {/* <div className="mt-8 w-full flex justify-center font-montserrat animate-fadeInUp">
         <nav className="flex space-x-8">
           <a
-            href="#project1"
+            href="/projects/1"
             className="text-lg font-medium text-black hover:text-[#D5BDAF] transition-colors duration-300"
           >
             Project 1
@@ -46,7 +47,8 @@ export default function Projects() {
             Project 4
           </a>
         </nav>
-      </div>
+      </div> */}
+      <Project1 />
     </div>
   );
 }
