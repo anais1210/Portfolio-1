@@ -73,6 +73,9 @@
 .font-anonymous-bold {
   font-family: "Anonymous Pro Bold";
 }
+.font-anonymous-italic {
+  font-family: "Anonymous Pro Italic";
+}
 .font-montserrat {
   font-family: "Montserrat Regular";
 }
@@ -98,8 +101,7 @@
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: "Copperplate Gothic 31 AB", "Safira March",
-    "Anonymous Pro Regular", Helvetica, sans-serif;
+  font-family: "Anonymous Pro Regular", Arial, Helvetica, sans-serif;
 
   overflow-x: hidden;
 }

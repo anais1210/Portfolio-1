@@ -7,12 +7,12 @@ import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
   title: "Anais Zhang's Portfolio",
-  description: "Welcome to my portfolio! I am a web developer.",
-  // icons: {
-  //   icon: "/imgs/favicon.png",
-  //   shortcut: "/imgs/favicon.png",
-  //   apple: "/imgs/favicon.png",
-  // },
+  description: "Welcome to my portfolio!",
+  icons: {
+    icon: "/imgs/favicon.ico",
+    // shortcut: "/imgs/favicon.png",
+    // apple: "/imgs/favicon.png",
+  },
 };
 
 export default function RootLayout({
@@ -25,7 +25,7 @@ export default function RootLayout({
       <body className="flex flex-col h-screen justify-between">
         <Header className="font-copperplate-gothic-31-ab header-title " />
         <main className="flex-grow">{children}</main>
-        <Footer className="h-5" />
+        {/* <Footer className="h-5" /> */}
       </body>
     </html>
   );
