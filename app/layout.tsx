@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   title: "Anais Zhang's Portfolio",
   description: "Welcome to my portfolio!",
   icons: {
-    icon: "/imgs/favicon.ico",
+    icon: "/imgs/logo.png",
     // shortcut: "/imgs/favicon.png",
     // apple: "/imgs/favicon.png",
   },
