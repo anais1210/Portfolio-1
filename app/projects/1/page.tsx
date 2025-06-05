@@ -29,7 +29,7 @@ export default function ProjectShowcase() {
             </p>
             <div className="flex gap-4">
               <a
-                href=""
+                href="https://restaurant-sichuan.vercel.app/"
                 className="bg-white text-black px-6 py-2 rounded hover:bg-gray-300 font-semibold transition"
               >
                 ▶ Discover
