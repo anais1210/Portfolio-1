@@ -2,6 +2,7 @@
 import React from "react";
 // import Resume from "@/components/Resume";
 import Image from "next/image";
+import Skills from "@/components/ResumeSection/Skills";
 
 function About() {
   // Utilisation de ref pour la section Resume
@@ -94,6 +95,10 @@ function About() {
       </div>
       {/* Ligne de séparation */}
       <hr className="border-t-2 border-gray-300 my-6 w-1/2 mx-auto" />
+
+      <Skills />
+
+      <hr className="border-t-2 border-gray-300 my-8 w-1/2 mx-auto mt-9" />
 
       {/* Section Resume */}
       {/* <div
