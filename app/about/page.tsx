@@ -1,21 +1,21 @@
 "use client";
-import React, { useRef } from "react";
-import Resume from "@/components/Resume";
+import React from "react";
+// import Resume from "@/components/Resume";
 import Image from "next/image";
 
 function About() {
   // Utilisation de ref pour la section Resume
-  const resumeRef = useRef<HTMLDivElement>(null);
+  // const resumeRef = useRef<HTMLDivElement>(null);
 
-  const scrollToResume = () => {
-    // Défilement fluide vers la section Resume
-    resumeRef.current?.scrollIntoView({ behavior: "smooth", block: "start" });
+  // const scrollToResume = () => {
+  //   // Défilement fluide vers la section Resume
+  //   resumeRef.current?.scrollIntoView({ behavior: "smooth", block: "start" });
 
-    // Ajout d'un léger décalage pour ajuster la position
-    setTimeout(() => {
-      window.scrollBy(0, -40);
-    }, 600); // Délai de 500ms après le défilement
-  };
+  //   // Ajout d'un léger décalage pour ajuster la position
+  //   setTimeout(() => {
+  //     window.scrollBy(0, -40);
+  //   }, 600); // Délai de 500ms après le défilement
+  // };
 
   return (
     <div className="">
@@ -69,7 +69,7 @@ function About() {
         </div>
 
         {/* Scroll Down Icon */}
-        <div
+        {/* <div
           className="absolute bottom-5 flex flex-col items-center cursor-pointer"
           onClick={scrollToResume} // Utilisation de la fonction de défilement
         >
@@ -90,18 +90,18 @@ function About() {
             </svg>
           </div>
           <p className="text-gray-400 text-sm mt-2">Scroll Down to Continue</p>
-        </div>
+        </div> */}
       </div>
       {/* Ligne de séparation */}
       <hr className="border-t-2 border-gray-300 my-6 w-1/2 mx-auto" />
 
       {/* Section Resume */}
-      <div
+      {/* <div
         ref={resumeRef}
         className="w-full flex flex-col items-center justify-center px-8 sm:px-20 bg-custom"
       >
         <Resume />
-      </div>
+      </div> */}
     </div>
   );
 }

@@ -1,7 +1,7 @@
 import React from "react";
-import Experiences from "./ResumeSection/Experiences";
-import Education from "./ResumeSection/Education";
-import Skills from "./ResumeSection/Skills";
+// import Experiences from "./ResumeSection/Experiences";
+// import Education from "./ResumeSection/Education";
+// import Skills from "./ResumeSection/Skills";
 
 const Resume = () => {
   return (
@@ -20,14 +20,14 @@ const Resume = () => {
         </a>
       </div>
       {/* Section Experience */}
-      <Experiences />
+      {/* <Experiences /> */}
       {/* Espacement entre Experience et Education */}
       <div className="my-20" /> {/* Marge entre les sections */}
       {/* Section Education */}
-      <Education />
+      {/* <Education /> */}
       <div className="my-20" /> {/* Marge entre les sections */}
       {/* Section Skills */}
-      <Skills />
+      {/* <Skills /> */}
     </div>
   );
 };
