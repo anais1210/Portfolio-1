@@ -1,0 +1,3 @@
+:HL["/_next/static/chunks/e180a8e33d2f824b.css","style"]
+:HL["https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css","style",{"type":"text/css"}]
+0:{"buildId":"PRcDvNT_G2ab5PF0SwNRm","tree":{"name":"","paramType":null,"paramKey":"","hasRuntimePrefetch":false,"slots":{"children":{"name":"contact","paramType":null,"paramKey":"contact","hasRuntimePrefetch":false,"slots":{"children":{"name":"__PAGE__","paramType":null,"paramKey":"__PAGE__","hasRuntimePrefetch":false,"slots":null,"isRootLayout":false}},"isRootLayout":false}},"isRootLayout":true},"staleTime":300}
