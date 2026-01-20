@@ -42,9 +42,12 @@ export default function AboutSection() {
               transition={{ duration: 0.8 }}
             >
               <div className="relative aspect-[3/4] overflow-hidden rounded-2xl">
-                <motion.div style={{ scale: imageScale }} className="absolute inset-0">
+                <motion.div
+                  style={{ scale: imageScale }}
+                  className="absolute inset-0"
+                >
                   <Image
-                    src="/imgs/profile.JPG"
+                    src="/imgs/cartoon.png"
                     alt="Anaïs Zhang"
                     fill
                     className="object-cover"
@@ -56,7 +59,7 @@ export default function AboutSection() {
               </div>
 
               {/* Floating accent card */}
-              <motion.div
+              {/* <motion.div
                 className="absolute -bottom-8 -right-8 glass-card p-6 rounded-xl max-w-[200px]"
                 initial={{ opacity: 0, scale: 0.8 }}
                 whileInView={{ opacity: 1, scale: 1 }}
@@ -64,8 +67,10 @@ export default function AboutSection() {
                 transition={{ delay: 0.4, duration: 0.6 }}
               >
                 <p className="text-4xl font-safira-march gradient-text">5+</p>
-                <p className="text-[#9CA3AF] text-sm font-montserrat mt-1">Years of Experience</p>
-              </motion.div>
+                <p className="text-[#9CA3AF] text-sm font-montserrat mt-1">
+                  Years of Experience
+                </p>
+              </motion.div> */}
             </motion.div>
 
             {/* Right Column - Text Content */}
@@ -89,7 +94,7 @@ export default function AboutSection() {
 
               {/* Large Headline */}
               <motion.h2
-                className="text-4xl sm:text-5xl lg:text-6xl font-safira-march leading-tight mb-8"
+                className="text-5xl sm:text-6xl lg:text-7xl font-safira-march leading-tight mb-8"
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
@@ -111,9 +116,10 @@ export default function AboutSection() {
                   viewport={{ once: true }}
                   transition={{ delay: 0.3, duration: 0.6 }}
                 >
-                  I'm Anaïs — a freelance fullstack developer based in{" "}
-                  <span className="text-[#7C3AED]">Paris</span>. I transform ideas
-                  into high-performance, modern web applications.
+                  I'm Anaïs — a freelance fullstack developer from{" "}
+                  <span className="text-[#7C3AED]">Paris, France 🇫🇷</span>. I
+                  transform ideas into high-performance, modern web
+                  applications.
                 </motion.p>
 
                 <motion.p
@@ -124,8 +130,7 @@ export default function AboutSection() {
                   transition={{ delay: 0.4, duration: 0.6 }}
                 >
                   From front-end finesse to back-end architecture, I handle the
-                  complete development cycle. My clients get polished, ready-to-launch
-                  solutions without the technical headache.
+                  complete development cycle.
                 </motion.p>
 
                 <motion.p
@@ -135,9 +140,9 @@ export default function AboutSection() {
                   viewport={{ once: true }}
                   transition={{ delay: 0.5, duration: 0.6 }}
                 >
-                  Driven by curiosity and a passion for solving complex problems,
-                  I'm constantly exploring new technologies and pushing the boundaries
-                  of what's possible on the web.
+                  Driven by curiosity and a passion for solving complex
+                  problems, I'm constantly exploring new technologies and
+                  pushing the boundaries of what's possible on the web.
                 </motion.p>
               </div>
 
@@ -187,9 +192,9 @@ export default function AboutSection() {
             <span className="absolute -top-8 -left-4 text-8xl text-[#7C3AED]/20 font-safira-march">
               "
             </span>
-            <p className="text-3xl sm:text-4xl lg:text-5xl font-safira-march text-[#F8F8FF] leading-tight">
+            <p className="text-4xl sm:text-5xl lg:text-6xl font-safira-march text-[#F8F8FF] leading-tight">
               Let's work together and make your{" "}
-              <span className="gradient-text">idea happen</span>
+              <span className="gradient-text">project real</span>
             </p>
             <span className="absolute -bottom-12 -right-4 text-8xl text-[#7C3AED]/20 font-safira-march">
               "
@@ -203,10 +208,10 @@ export default function AboutSection() {
         <div className="max-w-7xl mx-auto px-6 sm:px-12 lg:px-24">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
             {[
-              { value: "20+", label: "Projects Delivered" },
-              { value: "5+", label: "Years Experience" },
-              { value: "10+", label: "Technologies" },
-              { value: "100%", label: "Client Satisfaction" },
+              { value: "20+", label: "Things Shipped" },
+              { value: "Fast", label: "Learning Curve" },
+              { value: "∞", label: "Curiosity" },
+              { value: "Daily", label: "Consistency" },
             ].map((stat, index) => (
               <motion.div
                 key={index}

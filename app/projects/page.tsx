@@ -10,7 +10,7 @@ const projects = [
     title: "Restaurant Sichuan",
     description:
       "A showcase website for a Chinese restaurant, presenting the menu and contact information with a modern, elegant design.",
-    image: "/imgs/projects/1/logo-fish.png",
+    image: "/imgs/projects/1/preview4.png",
     date: "May 2020",
     link: "/projects/1",
     tags: ["Next.js", "React", "Tailwind CSS"],
@@ -18,7 +18,8 @@ const projects = [
   },
   {
     title: "NFT Marketplace",
-    description: "A decentralized marketplace for collecting and trading NFTs with wallet integration.",
+    description:
+      "A decentralized marketplace for collecting and trading NFTs with wallet integration.",
     image: "/imgs/nft-marketplace.jpg",
     date: "June 2024",
     link: "/projects/2",
@@ -27,7 +28,8 @@ const projects = [
   },
   {
     title: "Portfolio v2",
-    description: "Personal portfolio showcasing projects and skills with modern animations.",
+    description:
+      "Personal portfolio showcasing projects and skills with modern animations.",
     image: "/imgs/mac.jpg",
     date: "2024",
     link: "#",
@@ -69,9 +71,9 @@ export default function Projects() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.3, duration: 0.6 }}
           >
-            A collection of projects I&apos;ve worked on, from web applications to
-            blockchain solutions. Each project represents a unique challenge and
-            learning experience.
+            A collection of projects I&apos;ve worked on, from web applications
+            to blockchain solutions. Each project represents a unique challenge
+            and learning experience.
           </motion.p>
         </div>
       </section>
@@ -146,7 +148,9 @@ export default function Projects() {
 
                         {/* View project indicator */}
                         <div className="flex items-center gap-2 mt-4 text-[#7C3AED] opacity-0 group-hover:opacity-100 transform translate-y-4 group-hover:translate-y-0 transition-all duration-300 delay-100">
-                          <span className="text-sm font-montserrat">View Project</span>
+                          <span className="text-sm font-montserrat">
+                            View Project
+                          </span>
                           <svg
                             className="w-4 h-4 transform group-hover:translate-x-2 transition-transform duration-300"
                             fill="none"
@@ -182,7 +186,8 @@ export default function Projects() {
               Want to work together?
             </h2>
             <p className="text-[#9CA3AF] font-anonymous-regular text-lg mb-8">
-              I&apos;m always open to discussing new projects and creative ideas.
+              I&apos;m always open to discussing new projects and creative
+              ideas.
             </p>
             <Link href="/contact">
               <motion.button

@@ -73,9 +73,9 @@ export default function ProjectShowcase() {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.4 }}
               >
-                A showcase website for a Chinese restaurant in Paris, highlighting
-                the menu and contact information. Designed to be responsive and
-                easy to navigate.
+                A showcase website for a Chinese restaurant in Paris,
+                highlighting the menu and contact information. Designed to be
+                responsive and easy to navigate.
               </motion.p>
 
               <motion.p
@@ -84,8 +84,9 @@ export default function ProjectShowcase() {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.5 }}
               >
-                The goal is simple navigation - the easier it is for customers to find
-                information, the better. Clean, minimalist design emphasizing the dishes.
+                The goal is simple navigation - the easier it is for customers
+                to find information, the better. Clean, minimalist design
+                emphasizing the dishes.
               </motion.p>
 
               <motion.div
@@ -105,8 +106,18 @@ export default function ProjectShowcase() {
                     whileTap={{ scale: 0.98 }}
                   >
                     <span>Live Demo</span>
-                    <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                    <svg
+                      className="w-5 h-5"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
+                      />
                     </svg>
                   </motion.button>
                 </a>
@@ -157,8 +168,18 @@ export default function ProjectShowcase() {
             transition={{ duration: 2, repeat: Infinity }}
           >
             <span className="text-sm font-montserrat mb-2">Scroll</span>
-            <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+            <svg
+              className="w-6 h-6"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M19 9l-7 7-7-7"
+              />
             </svg>
           </motion.div>
         </motion.div>
@@ -168,7 +189,9 @@ export default function ProjectShowcase() {
       <section className="py-24 px-6 sm:px-12 lg:px-24">
         <div className="max-w-7xl mx-auto">
           <ScrollReveal>
-            <h2 className="text-3xl font-safira-march gradient-text mb-12">Tech Stack</h2>
+            <h2 className="text-3xl font-safira-march gradient-text mb-12">
+              Tech Stack
+            </h2>
           </ScrollReveal>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -177,7 +200,9 @@ export default function ProjectShowcase() {
                 <div className="glass-card p-6 rounded-xl">
                   <div className="flex items-center gap-4 mb-4">
                     <i className={`${tech.icon} text-3xl text-[#7C3AED]`} />
-                    <span className="font-montserrat text-[#F8F8FF]">{tech.name}</span>
+                    <span className="font-montserrat text-[#F8F8FF]">
+                      {tech.name}
+                    </span>
                   </div>
                   <div className="relative h-2 bg-[#1A1A3E] rounded-full overflow-hidden">
                     <motion.div
@@ -199,20 +224,56 @@ export default function ProjectShowcase() {
       <section className="py-24 px-6 sm:px-12 lg:px-24">
         <div className="max-w-7xl mx-auto">
           <ScrollReveal>
-            <h2 className="text-3xl font-safira-march gradient-text mb-12">Project Preview</h2>
+            <h2 className="text-3xl font-safira-march gradient-text mb-12">
+              Project Preview
+            </h2>
           </ScrollReveal>
 
           <ScrollReveal delay={0.2}>
-            <div className="relative group">
-              <div className="absolute -inset-4 bg-gradient-to-r from-[#7C3AED] via-[#EC4899] to-[#06B6D4] rounded-3xl blur-xl opacity-20 group-hover:opacity-40 transition-opacity duration-500" />
-              <div className="relative rounded-2xl overflow-hidden glass-card">
-                <Image
-                  src="/imgs/projects/1/homepage.png"
-                  alt="Homepage Preview"
-                  width={1500}
-                  height={900}
-                  className="w-full h-auto"
-                />
+            <div className="relative">
+              <div className="absolute -inset-4 bg-gradient-to-r from-[#7C3AED] via-[#EC4899] to-[#06B6D4] rounded-3xl blur-xl opacity-20" />
+
+              <div className="relative grid grid-cols-6 gap-4 glass-card rounded-2xl p-4">
+                {/* Image principale */}
+                <div className="col-span-6 md:col-span-4 row-span-2 overflow-hidden rounded-xl">
+                  <video
+                    src="/imgs/projects/1/demo.mov"
+                    autoPlay
+                    loop
+                    muted
+                    playsInline
+                    className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
+                  />
+                  {/* <Video
+                    src="/imgs/projects/1/preview.png"
+                    alt="Main preview"
+                    width={1600}
+                    height={1000}
+                    className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
+                  /> */}
+                </div>
+
+                {/* Image secondaire */}
+                <div className="col-span-3 md:col-span-2 overflow-hidden rounded-xl">
+                  <Image
+                    src="/imgs/projects/1/preview3.png"
+                    alt="Secondary preview"
+                    width={800}
+                    height={600}
+                    className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
+                  />
+                </div>
+
+                {/* Image secondaire */}
+                <div className="col-span-3 md:col-span-2 overflow-hidden rounded-xl">
+                  <Image
+                    src="/imgs/projects/1/preview2.png"
+                    alt="Third preview"
+                    width={800}
+                    height={600}
+                    className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
+                  />
+                </div>
               </div>
             </div>
           </ScrollReveal>
@@ -228,8 +289,18 @@ export default function ProjectShowcase() {
                 className="flex items-center gap-3 text-[#9CA3AF] hover:text-[#F8F8FF] transition-colors"
                 whileHover={{ x: -5 }}
               >
-                <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
+                <svg
+                  className="w-5 h-5"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M15 19l-7-7 7-7"
+                  />
                 </svg>
                 <span className="font-montserrat">Back to Projects</span>
               </motion.div>

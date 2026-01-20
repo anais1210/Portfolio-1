@@ -50,7 +50,7 @@ export default function About() {
                   style={{ scale: imageScale, y: imageY }}
                 >
                   <Image
-                    src="/imgs/profile.JPG"
+                    src="/imgs/cartoon_profile2.jpg"
                     alt="Anaïs Zhang"
                     fill
                     className="object-cover"
@@ -72,16 +72,24 @@ export default function About() {
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{ delay: 0.6, duration: 0.6 }}
               >
-                <div className="flex gap-8">
+                {/* <div className="flex gap-8">
                   <div className="text-center">
-                    <p className="text-3xl font-safira-march gradient-text">5+</p>
-                    <p className="text-[#9CA3AF] text-xs font-montserrat mt-1">Years</p>
+                    <p className="text-3xl font-safira-march gradient-text">
+                      5+
+                    </p>
+                    <p className="text-[#9CA3AF] text-xs font-montserrat mt-1">
+                      Years
+                    </p>
                   </div>
                   <div className="text-center">
-                    <p className="text-3xl font-safira-march gradient-text">20+</p>
-                    <p className="text-[#9CA3AF] text-xs font-montserrat mt-1">Projects</p>
+                    <p className="text-3xl font-safira-march gradient-text">
+                      20+
+                    </p>
+                    <p className="text-[#9CA3AF] text-xs font-montserrat mt-1">
+                      Projects
+                    </p>
                   </div>
-                </div>
+                </div> */}
               </motion.div>
 
               {/* Decorative Elements */}
@@ -135,7 +143,10 @@ export default function About() {
                   transition={{ delay: 0.5, duration: 0.6 }}
                 >
                   I'm Anaïs, a freelance fullstack developer based in{" "}
-                  <span className="text-[#7C3AED] font-bold">Paris</span>.
+                  <span className="text-[#7C3AED] font-bold">
+                    Paris, France 🇫🇷
+                  </span>
+                  .
                 </motion.p>
 
                 <motion.p
@@ -146,7 +157,8 @@ export default function About() {
                 >
                   I build high-performance, modern websites and web applications
                   for small businesses and solo entrepreneurs. From concept to
-                  deployment, I handle everything so you can focus on your business.
+                  deployment, I handle everything so you can focus on your
+                  business.
                 </motion.p>
 
                 <motion.p
@@ -156,7 +168,8 @@ export default function About() {
                   transition={{ delay: 0.7, duration: 0.6 }}
                 >
                   Driven by curiosity and a love for solving complex problems,
-                  I'm constantly exploring new technologies and pushing boundaries.
+                  I'm constantly exploring new technologies and pushing
+                  boundaries.
                 </motion.p>
               </div>
 

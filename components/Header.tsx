@@ -8,7 +8,7 @@ import { ClassProps } from "@/app/type";
 
 const navigation = [
   { name: "projects", href: "/projects" },
-  { name: "about", href: "/about" },
+  // { name: "about", href: "/about" },
   { name: "contact", href: "/contact" },
 ];
 
@@ -30,9 +30,7 @@ export default function Header({ className }: ClassProps) {
     <div className={className}>
       <motion.nav
         className={`fixed top-0 w-full z-50 transition-all duration-300 ${
-          isScrolled
-            ? "glass-strong py-3"
-            : "bg-transparent py-5"
+          isScrolled ? "glass-strong py-3" : "bg-transparent py-5"
         }`}
         initial={{ y: -100 }}
         animate={{ y: 0 }}
@@ -47,8 +45,12 @@ export default function Header({ className }: ClassProps) {
                 whileHover={{ scale: 1.05 }}
                 transition={{ duration: 0.2 }}
               >
-                <span className="gradient-text text-xl font-bold tracking-wider">AN</span>
-                <span className="gradient-text text-xl font-bold tracking-wider">ZH</span>
+                <span className="gradient-text text-xl font-bold tracking-wider">
+                  AN
+                </span>
+                <span className="gradient-text text-xl font-bold tracking-wider">
+                  ZH
+                </span>
               </motion.div>
               <div className="absolute -inset-2 rounded-lg bg-gradient-to-r from-[#7C3AED]/20 to-[#EC4899]/20 opacity-0 group-hover:opacity-100 blur-xl transition-opacity duration-300" />
             </Link>
