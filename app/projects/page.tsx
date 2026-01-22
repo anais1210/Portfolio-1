@@ -7,35 +7,36 @@ import { ScrollReveal } from "@/components/animations";
 
 const projects = [
   {
-    title: "Restaurant Sichuan",
+    title: "Burger API",
     description:
-      "A showcase website for a Chinese restaurant, presenting the menu and contact information with a modern, elegant design.",
-    image: "/imgs/projects/1/preview4.png",
-    date: "May 2020",
-    link: "/projects/1",
-    tags: ["Next.js", "React", "Tailwind CSS"],
+      "RESTful API for managing burger orders from customer to restaurant, built with Node.js and Express.",
+    image: "/imgs/projects/2/burger-neon.avif",
+    date: "March 2022",
+    link: "/projects/2",
+    tags: ["Vite.js", "Tailwind CSS", "React", "Node.js", "Express", "MongoDB"],
     size: "large" as const,
   },
   {
-    title: "NFT Marketplace",
+    title: "Restaurant Sichuan",
     description:
-      "A decentralized marketplace for collecting and trading NFTs with wallet integration.",
-    image: "/imgs/nft-marketplace.jpg",
-    date: "June 2024",
-    link: "/projects/2",
-    tags: ["Solidity", "Web3", "React"],
+      "A showcase website for a Chinese restaurant, presenting the menu and contact information with a modern, elegant design.",
+    image: "/imgs/projects/1/logo-sichuan.png",
+    date: "May 2020",
+    link: "/projects/1",
+    tags: ["Next.js", "React", "Tailwind CSS"],
     size: "medium" as const,
   },
-  {
-    title: "Portfolio v2",
-    description:
-      "Personal portfolio showcasing projects and skills with modern animations.",
-    image: "/imgs/mac.jpg",
-    date: "2024",
-    link: "#",
-    tags: ["Next.js", "Framer Motion"],
-    size: "small" as const,
-  },
+
+  // {
+  //   title: "Portfolio",
+  //   description:
+  //     "Personal portfolio showcasing projects and skills with modern animations.",
+  //   image: "/imgs/mac.jpg",
+  //   date: "May 2025",
+  //   link: "#",
+  //   tags: ["Next.js", "Framer Motion"],
+  //   size: "small" as const,
+  // },
 ];
 
 export default function Projects() {

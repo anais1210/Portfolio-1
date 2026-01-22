@@ -7,10 +7,13 @@ import { useRef } from "react";
 import { ScrollReveal } from "@/components/animations";
 
 const techStack = [
+  { name: "TypeScript", icon: "devicon-typescript-plain", level: 99 },
   { name: "React", icon: "devicon-react-original", level: 90 },
   { name: "Tailwind CSS", icon: "devicon-tailwindcss-original", level: 85 },
-  { name: "Next.js", icon: "devicon-nextjs-plain", level: 80 },
-  { name: "TypeScript", icon: "devicon-typescript-plain", level: 75 },
+  { name: "Vite.js", icon: "devicon-vitejs-plain", level: 80 },
+  { name: "Node.js", icon: "devicon-nodejs-plain", level: 75 },
+  { name: "Express.js", icon: "devicon-express-original", level: 75 },
+  { name: "MongoDB", icon: "devicon-mongodb-plain", level: 75 },
 ];
 
 export default function ProjectShowcase() {
@@ -36,7 +39,7 @@ export default function ProjectShowcase() {
           style={{ y: heroImageY, opacity: heroOpacity }}
         >
           <Image
-            src="/imgs/projects/1/logo-fish.png"
+            src="/imgs/projects/2/burger-neon.avif"
             alt="Restaurant Sichuan"
             fill
             className="object-contain opacity-20"
@@ -55,7 +58,7 @@ export default function ProjectShowcase() {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.2 }}
               >
-                May 2020
+                March 2022
               </motion.span>
 
               <motion.h1
@@ -64,7 +67,7 @@ export default function ProjectShowcase() {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.3, duration: 0.8 }}
               >
-                Restaurant Sichuan
+                Oz Burger
               </motion.h1>
 
               <motion.p
@@ -73,9 +76,10 @@ export default function ProjectShowcase() {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.4 }}
               >
-                A showcase website for a Chinese restaurant in Paris,
-                highlighting the menu and contact information. Designed to be
-                responsive and easy to navigate.
+                OzBurger is a scalable full-stack application designed for a
+                burger restaurant. The backend is structured as independent
+                microservices, providing a RESTful CRUD API for products, meals,
+                users, and orders.
               </motion.p>
 
               <motion.p
@@ -84,9 +88,9 @@ export default function ProjectShowcase() {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.5 }}
               >
-                The goal is simple navigation - the easier it is for customers
-                to find information, the better. Clean, minimalist design
-                emphasizing the dishes.
+                The frontend, built with React, interacts with these services to
+                deliver a complete ordering experience, from menu exploration to
+                order submission.
               </motion.p>
 
               <motion.div
@@ -96,7 +100,7 @@ export default function ProjectShowcase() {
                 transition={{ delay: 0.6 }}
               >
                 <a
-                  href="https://restaurant-sichuan.vercel.app/"
+                  href="https://anais1210.github.io/BurgerAPI"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -122,7 +126,7 @@ export default function ProjectShowcase() {
                   </motion.button>
                 </a>
                 <a
-                  href="https://github.com/anais1210/Restaurant-Sichuan"
+                  href="https://anais1210.github.io/BurgerAPI"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -160,7 +164,7 @@ export default function ProjectShowcase() {
                 <div className="absolute -inset-4 bg-gradient-to-r from-[#7C3AED] via-[#EC4899] to-[#06B6D4] rounded-3xl blur-2xl opacity-30" />
                 <div className="relative w-full h-full rounded-3xl overflow-hidden glass-card">
                   <Image
-                    src="/imgs/projects/1/logo-fish.png"
+                    src="/imgs/projects/2/preview-burger.png"
                     alt="Restaurant Sichuan Logo"
                     fill
                     className="object-contain p-8"
@@ -249,46 +253,49 @@ export default function ProjectShowcase() {
             <div className="relative">
               <div className="absolute -inset-4 bg-gradient-to-r from-[#7C3AED] via-[#EC4899] to-[#06B6D4] rounded-3xl blur-xl opacity-20" />
 
-              <div className="relative grid grid-cols-6 gap-4 glass-card rounded-2xl p-4">
-                {/* Image principale */}
-                <div className="col-span-6 md:col-span-4 row-span-2 overflow-hidden rounded-xl">
-                  <video
-                    src="/imgs/projects/1/demo.mov"
-                    autoPlay
-                    loop
-                    muted
-                    playsInline
-                    className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
-                  />
-                  {/* <Video
-                    src="/imgs/projects/1/preview.png"
-                    alt="Main preview"
-                    width={1600}
-                    height={1000}
-                    className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
-                  /> */}
-                </div>
-
-                {/* Image secondaire */}
-                <div className="col-span-3 md:col-span-2 overflow-hidden rounded-xl">
+              <div className="relative grid grid-cols-1 gap-4 glass-card rounded-2xl p-4">
+                {/* HERO */}
+                <div className="overflow-hidden rounded-xl">
                   <Image
-                    src="/imgs/projects/1/preview3.png"
-                    alt="Secondary preview"
-                    width={800}
-                    height={600}
+                    src="/imgs/projects/2/burger-menu.png"
+                    alt="OzBurger main interface"
+                    width={1200}
+                    height={700}
                     className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
                   />
                 </div>
 
-                {/* Image secondaire */}
-                <div className="col-span-3 md:col-span-2 overflow-hidden rounded-xl">
-                  <Image
-                    src="/imgs/projects/1/preview2.png"
-                    alt="Third preview"
-                    width={800}
-                    height={600}
-                    className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
-                  />
+                {/* FEATURES */}
+                <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+                  <div className="overflow-hidden rounded-xl">
+                    <Image
+                      src="/imgs/projects/2/menu-manage.png"
+                      alt="Menu browsing"
+                      width={600}
+                      height={400}
+                      className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
+                    />
+                  </div>
+
+                  <div className="overflow-hidden rounded-xl">
+                    <Image
+                      src="/imgs/projects/2/dashboard.png"
+                      alt="Admin menu management"
+                      width={600}
+                      height={400}
+                      className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
+                    />
+                  </div>
+
+                  <div className="overflow-hidden rounded-xl">
+                    <Image
+                      src="/imgs/projects/2/order-manage.png"
+                      alt="Order management"
+                      width={600}
+                      height={400}
+                      className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
+                    />
+                  </div>
                 </div>
               </div>
             </div>

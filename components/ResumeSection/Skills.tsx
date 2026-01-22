@@ -14,6 +14,7 @@ const skillCategories = [
       { name: "Node.js", icon: "devicon-nodejs-plain colored" },
       { name: "Go", icon: "devicon-go-original-wordmark colored" },
       { name: "Python", icon: "devicon-python-plain colored" },
+      { name: "Java", icon: "devicon-java-plain colored" },
     ],
   },
   {
@@ -21,6 +22,9 @@ const skillCategories = [
     skills: [
       { name: "Solidity", icon: "devicon-solidity-plain" },
       { name: "IPFS", icon: "", isImage: true, src: "/imgs/ipfs.png" },
+      { name: "Ether.js", icon: "", isImage: true, src: "/imgs/ethers.png" },
+      { name: "Metamask", icon: "", isImage: true, src: "/imgs/metamask.png" },
+      { name: "Wagmi", icon: "", isImage: true, src: "/imgs/wagmi.png" },
       { name: "Hardhat", icon: "devicon-hardhat-plain colored" },
     ],
   },
@@ -46,7 +50,7 @@ const skillCategories = [
 ];
 
 interface SkillCardProps {
-  category: typeof skillCategories[0];
+  category: (typeof skillCategories)[0];
   index: number;
 }
 
