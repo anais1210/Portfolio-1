@@ -160,7 +160,7 @@ export default function ProjectShowcase() {
                 <div className="absolute -inset-4 bg-gradient-to-r from-[#7C3AED] via-[#EC4899] to-[#06B6D4] rounded-3xl blur-2xl opacity-30" />
                 <div className="relative w-full h-full rounded-3xl overflow-hidden glass-card">
                   <Image
-                    src="/imgs/projects/1/logo-fish.png"
+                    src="/imgs/projects/1/preview1.png"
                     alt="Restaurant Sichuan Logo"
                     fill
                     className="object-contain p-8"
