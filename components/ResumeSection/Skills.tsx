@@ -15,6 +15,8 @@ const skillCategories = [
       { name: "Go", icon: "devicon-go-original-wordmark colored" },
       { name: "Python", icon: "devicon-python-plain colored" },
       { name: "Java", icon: "devicon-java-plain colored" },
+      { name: "PHP", icon: "devicon-php-plain colored" },
+      { name: "C", icon: "devicon-c-original colored" },
     ],
   },
   {

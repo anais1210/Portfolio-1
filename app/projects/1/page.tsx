@@ -96,7 +96,7 @@ export default function ProjectShowcase() {
                 transition={{ delay: 0.6 }}
               >
                 <a
-                  href="https://restaurant-sichuan.vercel.app/"
+                  href="https://fast-brushlands-29022-d905e5c7ddb6.herokuapp.com/"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
