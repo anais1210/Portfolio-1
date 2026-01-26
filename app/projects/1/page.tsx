@@ -11,6 +11,7 @@ const techStack = [
   { name: "Tailwind CSS", icon: "devicon-tailwindcss-original", level: 85 },
   { name: "Next.js", icon: "devicon-nextjs-plain", level: 80 },
   { name: "TypeScript", icon: "devicon-typescript-plain", level: 75 },
+  { name: "Heroku", icon: "devicon-heroku-original" },
 ];
 
 export default function ProjectShowcase() {
@@ -73,7 +74,7 @@ export default function ProjectShowcase() {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.4 }}
               >
-                A showcase website for a Chinese restaurant in Paris,
+                A showcase website for a Chinese Sichuan restaurant in Paris,
                 highlighting the menu and contact information. Designed to be
                 responsive and easy to navigate.
               </motion.p>
@@ -233,6 +234,50 @@ export default function ProjectShowcase() {
               </ScrollReveal>
             ))}
           </div>
+        </div>
+      </section>
+
+      <section className="py-24 px-6 sm:px-12 lg:px-24 bg-white-900 text-white opacity-95">
+        <div className="max-w-7xl mx-auto">
+          <ScrollReveal>
+            <h2 className="text-4xl sm:text-5xl font-safira-march text-transparent bg-clip-text bg-gradient-to-r from-purple-500 via-pink-500 to-cyan-400 mb-16 text-center">
+              Additional Feature
+            </h2>
+          </ScrollReveal>
+
+          <ScrollReveal delay={0.2}>
+            <div className="relative flex flex-col lg:flex-row items-center gap-12">
+              {/* Video */}
+              <div className="lg:w-2/3 w-full rounded-2xl overflow-hidden shadow-2xl transform hover:scale-105 transition-transform duration-700">
+                <video
+                  src="/imgs/projects/1/record-ai.mov"
+                  autoPlay
+                  loop
+                  muted
+                  playsInline
+                  className="w-full h-full object-cover"
+                />
+              </div>
+
+              {/* Texte */}
+              <motion.div
+                className="lg:w-1/3 w-full p-6 bg-white/4 rounded-2xl backdrop-blur-md shadow-lg"
+                initial={{ opacity: 0, x: 50 }}
+                animate={{ opacity: 1, x: 0 }}
+                transition={{ delay: 0.5 }}
+              >
+                <p className="text-gray-300 text-lg leading-relaxed mb-4">
+                  This project features a smart AI assistant built on a RAG
+                  architecture. It combines business rules, document retrieval,
+                  and AI generation to provide accurate answers quickly.
+                </p>
+                <p className="text-gray-400 text-md">
+                  A caching system is implemented to optimize costs and reduce
+                  latency, making the assistant both efficient and reliable.
+                </p>
+              </motion.div>
+            </div>
+          </ScrollReveal>
         </div>
       </section>
 
